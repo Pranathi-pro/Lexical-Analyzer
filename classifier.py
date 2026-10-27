@@ -8,12 +8,14 @@ KEYWORDS = {
     "for", "return", "class", "public", "private", "static", "def", "print",
     "import", "from", "True", "False", "break", "continue"
 }
-TOKEN_RE = re.compile(
-    r'"(?:\\.|[^"\\])*"|\\\'(?:\\\\.|[^\\\'\\\\])*\\\'|'
-    r'[A-Za-z_][A-Za-z0-9_]*|\\d+(?:\\.\\d+)?|'
-    r'==|!=|<=|>=|\\+\\+|--|&&|\\|\\||'
-    r'[+\\-*/%=<>!&|^~]|[(){}\\[\\],.;:]'
-)
+TOKEN_RE = re.compile( r'"(?:\\.|[^"\\])*"|'
+    r"'(?:\\.|[^'\\])*'|"
+    r'[A-Za-z_][A-Za-z0-9_]*|'
+    r'\d+(?:\.\d+)?|'
+    r'==|!=|<=|>=|\+\+|--|&&|\|\||'
+    r'[+\-*/%=<>!&|^~]|'
+    r'[(){}\[\],.;:]')
+    
 
 def basic_type(token):
     if token in KEYWORDS:
