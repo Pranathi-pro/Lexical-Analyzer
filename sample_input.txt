@@ -1,0 +1,1 @@
+int total = price + 25;\nif (total > 100) {\n    print(total);\n}\n
