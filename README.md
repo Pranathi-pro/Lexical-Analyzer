@@ -27,7 +27,7 @@ git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 git push -u origin main
 ```
-Submit the repository URL in the form's **Code: GitHub link** field.
+Link: https://lexical-analyzer-iurqjzc992mqz2ucpwzhbe.streamlit.app/
 
 ## Important note
 This is a demonstration-scale project. The classifier uses a small illustrative training set and does not replace a complete compiler lexer/parser. Explain that the project demonstrates how neighboring-token context can be incorporated into ML-based token classification.
